@@ -10,7 +10,6 @@ import org.springframework.stereotype.Component;
 import popadic.lazar.fon.fisweb.constants.ActionConstants;
 import popadic.lazar.fon.fisweb.action.AbstractAction;
 
-
 /**
  *
  * @author Lazar Popadic
@@ -36,6 +35,8 @@ public class ActionFactory {
     private AbstractAction updateDepartmentAction;
     @Autowired
     private AbstractAction homeAction;
+    @Autowired
+    private AbstractAction myProfileAction;
 
     public AbstractAction createActionFactory(String actionName) {
         AbstractAction action = null;
@@ -64,7 +65,10 @@ public class ActionFactory {
             action = updateDepartmentAction;
         }
         if (actionName.startsWith(ActionConstants.URL_HOME)) {
-            action =  homeAction;
+            action = homeAction;
+        }
+        if (actionName.startsWith(ActionConstants.URL_PROFILE)) {
+            action = myProfileAction;
         }
         return action;
     }

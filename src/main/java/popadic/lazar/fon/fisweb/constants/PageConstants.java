@@ -16,6 +16,7 @@ public interface PageConstants {
     public static final String VIEW_ADD_DEPARTMENT = "VIEW_ADD_DEPARTMENT";
     public static final String VIEW_EDIT_DEPARTMENT = "VIEW_EDIT_DEPARTMENT";
     public static final String VIEW_HOME = "VIEW_HOME";
+    public static final String VIEW_PROFILE = "VIEW_PROFILE";
 
     public static final String VIEW_DEFAULT_ERROR = "VIEW_DEFAULT_ERROR";
 
@@ -24,6 +25,7 @@ public interface PageConstants {
     public static final String PAGE_ALL_DEPARTMENTS = "/WEB-INF/pages/department/all.jsp";
     public static final String PAGE_ADD_DEPARTMENT = "/WEB-INF/pages/department/add.jsp";
     public static final String PAGE_EDIT_DEPARTMENT = "/WEB-INF/pages/department/edit.jsp";
+    public static final String PAGE_PROFILE = "/WEB-INF/pages/user/myprofile.jsp";
 
     public static final String PAGE_DEFAULT_ERROR = "/WEB-INF/pages/error/defaultErrorPage.jsp";
 }
