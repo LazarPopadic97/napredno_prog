@@ -36,8 +36,8 @@ public class SaveDepartmentAction extends AbstractAction{
 
         if (departments.contains(department)) {
             request.setAttribute("message", "Department already exist with that id!");
-        }else if(request.getParameter("shortname").isBlank()
-                ||request.getParameter("name").isBlank()){
+        }else if(request.getParameter("shortname").isEmpty()
+                ||request.getParameter("name").isEmpty()){
             request.setAttribute("messageSaveX", "You must fill all the fields");
         } else {
             departments.add(department);
